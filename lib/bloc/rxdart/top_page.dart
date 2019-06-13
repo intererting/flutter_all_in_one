@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'blocs/bloc_provider.dart';
@@ -27,7 +28,7 @@ class TopPage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
           child: Icon(Icons.navigate_next),
           onPressed: () => Navigator.of(context)
-              .push(MaterialPageRoute(builder: (context) => UnderPage()))),
+              .push(CupertinoPageRoute(builder: (context) => UnderPage()))),
     );
   }
 }
